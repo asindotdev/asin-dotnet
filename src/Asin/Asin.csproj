@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>Asin</AssemblyName>
+    <RootNamespace>Asin</RootNamespace>
+    <PackageId>Asin</PackageId>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Title>Asin .NET SDK</Title>
+    <Authors>Asin</Authors>
+    <Company>Asin</Company>
+    <Copyright>Copyright (c) 2026 Asin</Copyright>
+    <Description>Official .NET SDK for the Asin Amazon price tracking API.</Description>
+    <PackageTags>amazon-api;price-tracking;price-history;asin;api;sdk;asin</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://www.asin.dev</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/asindotdev/asin-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" Link="README.md" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" Link="LICENSE" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Asin.Tests" />
+  </ItemGroup>
+</Project>
